@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Movie Panorama Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <style>
+      body {
+        margin: 10px;/*上左の余白*/
+        overflow: hidden;/*内容がボックスに収まらない場合、収まらない部分は非表示*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Video Chat</h1>
+    <div id="disp">
+    <div id="stage"></div>
+ </div>
+ <div>
+
+     <video id="my-video" style="width: 300px;" autoplay></video>
+     <video id="peer-video" style="width: 300px;" autoplay></video>
+
+ </div>
+ <div>
+     <p>MyID: <span id="my-id">-</span></p>
+     <p>PeerID: <span id="peer-id">-</span></p>
+ </div>
+ <div>
+     <input type="text" placeholder="PeerID" id="peer-id-input">
+     <button id="call-start">Start Call</button>
+     <button id="call-end">End Call</button>
+ </div>
+
+
+
+
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/StereoEffect.js"></script>
+  <script src="js/jquery.min.js"></script>
+<!--
+  <script src="video-trans.js"></script>
+-->
+  <script src="display-switch.js"></script>
+  <script src="videochat.js"></script>
+
+
+</body>
+
+<input type="button" value="表示" onclick="hyoji1(0)" style="position: absolute; left: 0px; top: 0px">
+<input type="button" value="非表示" onclick="hyoji1(1)"style="position: absolute; left: 50px; top: 0px">
+
+</html>
